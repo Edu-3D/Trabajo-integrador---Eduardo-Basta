@@ -44,7 +44,6 @@ header{
 }
 
 .logo img{
-  z-index: 1;
   height: 50px;
   top: 3px;
   width: 101px;
@@ -100,13 +99,13 @@ h1{
   width: 461px;
   height: 291px;
   left: 247px;
-  top: 275px;
+  top: 220px;
 
   
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style:normal;
   font-weight: 100;
-  font-size: 96px;
+  font-size: 90px;
   line-height: 80%;
     
 }
@@ -165,13 +164,14 @@ p{
   
 }
 
-#p1{
+.p1{
   position:absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
   width: 550px;
   height: 105px;
   left: 247px;
-  
-  top: 450px;
+  top: 400px;
   
   
 }
@@ -186,7 +186,7 @@ label{
   width: 1440px;
   height:500px;
   left: auto;
-  top: 550px;
+  top: 580px;
   
 
 }
@@ -208,25 +208,27 @@ label{
   width: 352px;
   height: 621px;
   left: 950px;
-  top: 110px;
+  top: 150px;
 }
 
 
 
-#h2ep{
+.h2ep{
   position: absolute;
   width: 551px;
   height: 168px;
   left: 400px;
-  top: 275px;
+  top: 300px;
 
 }
 .p2elaboracion{
   position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
   width: 551px;
   height: 240px;
   left: 400px;
-  top: 420px;
+  top: 460px;
 }
 
 
@@ -860,16 +862,80 @@ label{
 
 }
 
-.desarrolladores{
+.desarrolladores {
   position: absolute;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-style:italic;
   font-display:inherit;
   top: 65px;
   left: 156px;
-
+  font-family: "Lato";
+  margin: 0 auto;
+  padding: 0 140px 0 0;
+  display: inline;
+  margin-bottom: 0;
+}
+.desarrolladores {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: desarrolladores;
+  -moz-animation-name: desarrolladores;
+  animation-name: desarrolladores;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@-moz-keyframes desarrolladores {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes desarrolladores {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes desarrolladores {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes desarrolladores {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
+.desarrolladores :hover {
+  text-shadow: 3px 3px 3px #383838
+}
 .seguinos{
   position: absolute;
   top: 20px;
